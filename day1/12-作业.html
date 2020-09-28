@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Document</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+// 整个prompt其实就是输入进去的值，可以使用一个变量接收
+// var res = prompt('请输入你的银行卡密码：')
+// console.log(res);
+
+// var a = prompt('第一个数：')-0
+// var b = prompt('第二个数：')-0
+// console.log(a);
+// console.log(b);
+// var c = a + b;
+// console.log(c);
+
+
+// 交换两个变量的值
+var a = 1;
+var b = 2;
+// a=2  b=1
+// var c = a;
+// a = b
+// b = c
+// console.log(a);
+// console.log(b);
+
+// a = a + b; // a=3  b=2
+// b = a - b  // a=3  b=1
+// a = a - b; // a=2  b=1
+// console.log(a);
+// console.log(b);
+
+
+// 为抵抗洪水，战士连续作战89小时，编程计算共多少天零多少小时？
+// var hours = 89; // 总小时数;
+
+// var hour = hours%24;
+// console.log(hour);
+
+// var day = (hours-hour)/24
+// console.log(day);
+
+// var day = parseInt(hours/24)
+// console.log(day);
+// var hour = hours%24
+// console.log(hour);
+
+
+// 小明学习js用了7896709887秒。问：共多少天，多少小时，多少分钟，多少秒？
+var seconds = 7896709887
+var day = parseInt(seconds/60/60/24)
+var hour = parseInt(seconds/60/60%24)
+console.log(day);
+console.log(hour);
+var minute = parseInt(seconds/60%60)
+console.log(minute);
+var second = seconds%60;
+console.log(second);
+</script>
+</html>
