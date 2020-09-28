@@ -11,7 +11,7 @@
 // 为抵抗洪水，战士连续作战89小时，编程计算共多少天零多少小时？
 var hours = 89; // 总小时数;
 var times;
-times =((hours/24-1).toFixed(0)+"天"+hours%24+"小时");
+times =(parseInt(hours/24)+"天"+hours%24+"小时");
 console.log(times)
 
 
