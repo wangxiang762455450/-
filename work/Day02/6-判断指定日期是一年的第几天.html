@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+// 根据一个数字日期，判断这个日期是这一年的第几天 例如： 20160211，计算后结果为42
+var mous = [0,31,28,31,30,31,30,31,31,30,31,30,31]
+var date = +prompt("请输入数字日期：");
+var year = parseInt(date/10000);
+var mouth = parseInt(date/100%100);
+var day = date%100;
+for(var i = 1; i < mouth; i++){
+  day += mous[i];
+  if(i == 2 && (year % 4 === 0 && year % 100 !== 0 || year % 400 === 0)){
+    day++;
+  }
+}
+alert("第"+day+"天");
+</script>
+</html>
